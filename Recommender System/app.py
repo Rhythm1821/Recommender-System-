@@ -2,7 +2,7 @@ import streamlit as st
 import pickle as pkl
 import pandas as pd
 
-movies_dict = pkl.load(open('movies.pkl','rb'))
+movies_dict = pkl.load(open('movie_dict.pkl','rb'))
 movies = pd.DataFrame(movies_dict)
 
 similarity = pkl.load(open('similarity.pkl','rb'))
